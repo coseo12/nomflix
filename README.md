@@ -4,10 +4,10 @@ Learning React and ES6 by building a Mobie Discovery App.
 
 ## Screens
 
-- [ ] Home
-- [ ] TV
-- [ ] Search
-- [ ] Detail
+- [x] Home
+- [x] TV
+- [x] Search
+- [x] Detail
 
 ## API Verbs
 
@@ -19,3 +19,11 @@ Learning React and ES6 by building a Mobie Discovery App.
 - [x] TV Show Detail
 - [x] Movie Detail
 - [x] Search (Movie, Tv)
+
+## Code Challenges
+
+- [ ] IMDB Link
+- [ ] Tabs inside of Movie / Show details (YT Videos, Production Company & Countries)
+- [ ] Collections Link
+- [ ] /collections Route
+- [ ] On TV Show, show seasons and creators
