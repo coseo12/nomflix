@@ -11,6 +11,7 @@ export default class extends React.Component {
     this.state = {
       result: null,
       error: null,
+      current: '/Production',
       loading: true,
       isMovie: pathname.includes('/movie'),
     };
@@ -33,6 +34,7 @@ export default class extends React.Component {
       } else {
         ({ data: result } = await tvApi.showDetail(parseId));
       }
+      console.log(result);
       this.setState({
         result,
       });
@@ -47,8 +49,22 @@ export default class extends React.Component {
     }
   }
 
+  tabChgEvent = current => {
+    this.setState({
+      current,
+    });
+  };
+
   render() {
-    const { result, error, loading } = this.state;
-    return <DetailPresenter result={result} error={error} loading={loading} />;
+    const { result, current, error, loading } = this.state;
+    return (
+      <DetailPresenter
+        result={result}
+        current={current}
+        tabChgEvent={this.tabChgEvent}
+        error={error}
+        loading={loading}
+      />
+    );
   }
 }

@@ -22,8 +22,6 @@ Learning React and ES6 by building a Mobie Discovery App.
 
 ## Code Challenges
 
-- [ ] IMDB Link
-- [ ] Tabs inside of Movie / Show details (YT Videos, Production Company & Countries)
-- [ ] Collections Link
-- [ ] /collections Route
-- [ ] On TV Show, show seasons and creators
+- [x] IMDB Link
+- [x] Build two tabs to show the Videos, Production Companies, Production Countries of TV Show/Movies
+- [x] On TV Shows only, add a tab 'Seasons' to show all the seasons of the show with posters
