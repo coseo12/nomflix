@@ -28,7 +28,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://coseo12.github.io/nomflix",
   "browserslist": {
     "production": [
       ">0.2%",
