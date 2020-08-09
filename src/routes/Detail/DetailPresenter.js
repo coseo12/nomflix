@@ -225,7 +225,8 @@ const DetailPresenter = ({ result, current, tabChgEvent, loading, error }) =>
 
           <Tab>
             {current === '/Production'
-              ? result.production_companies.map(item => (
+              ? result.production_companies &&
+                result.production_companies.map(item => (
                   <TabBox key={item.id}>
                     <Box>
                       <Logo
@@ -239,7 +240,8 @@ const DetailPresenter = ({ result, current, tabChgEvent, loading, error }) =>
                   </TabBox>
                 ))
               : current === '/Countries'
-              ? result.production_countries.map((item, i) => (
+              ? result.production_countries &&
+                result.production_countries.map((item, i) => (
                   <TabBox key={i}>
                     <Contents>
                       <Item>iso_3166_1: {item.iso_3166_1}</Item>
