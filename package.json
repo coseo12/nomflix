@@ -28,6 +28,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "https://5f2f92d3bf54e9adbb71987c--kind-murdock-5df8c8.netlify.app/",
   "browserslist": {
     "production": [
       ">0.2%",
